@@ -1,0 +1,10 @@
+@mixin borderTest {
+    border: 1px solid red;
+}
+
+@mixin fullscreen {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    max-height: 100%;
+}
