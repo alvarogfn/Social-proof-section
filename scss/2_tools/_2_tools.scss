@@ -1,5 +1,6 @@
 @mixin borderTest {
     border: 1px solid red;
+    * { border: 1px solid blue};
 }
 
 @mixin fullscreen {

@@ -1,0 +1,16 @@
+.container {
+    display: grid;
+    grid-template-columns: 480px 100px 520px;
+    grid-template-rows: 250px 75px 260px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.attribution {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
