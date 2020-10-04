@@ -1,7 +1,7 @@
 .container {
     display: grid;
-    grid-template-columns: 480px 100px 520px;
-    grid-template-rows: 250px 75px 260px;
+    grid-template-columns: 480px 10vw 520px;
+    grid-template-rows: 250px 9vh 260px;
 
     position: absolute;
     top: 50%;
@@ -13,4 +13,34 @@
     position: fixed;
     bottom: 0;
     right: 0;
+}
+
+@include mediaquery(1200px) {
+    .container {
+        grid-template-columns: 480px 10vw 30vw;
+        grid-template-rows: 250px 5vh 260px;
+    }
+}
+
+@include mediaquery(850px) {
+    .container {
+        grid-template-columns: 85vw;
+        grid-template-rows: none;
+
+        width: max-content;
+
+        margin: 0 auto;
+
+        transform: translate(0, 0);
+
+        position: relative;
+        top: 10%;
+        left: 0;
+    }
+
+    .attribution {
+        margin-top: 8rem;
+        font-size: .7rem;
+        position: static;
+    }
 }

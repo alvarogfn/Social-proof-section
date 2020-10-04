@@ -1,6 +1,18 @@
 @mixin borderTest {
     border: 1px solid red;
-    * { border: 1px solid blue};
+    * {
+        border: 1px solid blue;
+        * {
+            border: 1px solid green;
+            * {
+                border: 1px solid yellow;
+                * {
+                    border: 1px solid black;
+                }
+            }
+
+        }
+    }
 }
 
 @mixin fullscreen {
@@ -8,4 +20,16 @@
     height: 100vh;
     max-width: 100%;
     max-height: 100%;
+}
+
+@mixin mediaquery($width: 1440px, $orientation: false) {
+    @if $orientation {
+        @media screen and (max-width: $width) and (orientation: $orientation) {
+            @content;
+        }
+    } @else {
+        @media screen and (max-width: $width) {
+            @content;
+        }
+    }
 }
