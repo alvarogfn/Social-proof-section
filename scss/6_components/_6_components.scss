@@ -14,7 +14,6 @@
     }
 
     &__subtitle {
-        font-size: 1rem;
         font-weight: 400;
         line-height: 1.4rem;
         color: $dark-grayish-magenta;
@@ -243,10 +242,7 @@
             &--star {
                 font-size: 1.3rem;
             }
-
-            &:nth-child(1), &:nth-child(2), &:nth-child(3) {
-                align-self: center;
-            }
+            align-self: center;
         }
     }
 

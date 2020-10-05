@@ -352,7 +352,7 @@ body {
   max-width: 100%;
   max-height: 100%;
   background-color: #ffffff;
-  background-image: url("../../images/bg-pattern-top-desktop.svg"), url("../../images/bg-pattern-bottom-desktop.svg");
+  background-image: url("./../images/bg-pattern-top-desktop.svg"), url("./../images/bg-pattern-bottom-desktop.svg");
   background-repeat: no-repeat;
   background-size: 40% 40%, 81% 81%;
   background-position: top left, bottom right;
@@ -369,7 +369,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (max-width: 850px) {
   body {
-    background-image: url("../../images/bg-pattern-top-mobile.svg"), url("../../images/bg-pattern-bottom-mobile.svg");
+    background-image: url("./../images/bg-pattern-top-mobile.svg"), url("./../images/bg-pattern-bottom-mobile.svg");
     background-size: 100% 27%, 100% 27%;
     background-position: top center, bottom right;
     display: block;
